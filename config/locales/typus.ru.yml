@@ -75,3 +75,9 @@ ru:
   "%{model} successfully created": "%{model} создан"
   "%{model} successfully removed": "%{model} удален"
   "%{model} successfully updated": "%{model} успешно обновлен"
+  
+  "Save and add another": "Сохранить и добавить ещё"
+  "Save and continue editing": "Сохранить и продолжить редактирование"
+  "Save": "Сохранить"
+
+  "Trash": "Удалить"
