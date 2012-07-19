@@ -17,6 +17,9 @@ Typus::Resources.setup do |config|
 
   # Defines per_page.
   # config.per_page = 25
+  
+  # Defines sort_order.
+  # config.sort_order = "created_at ASC"
 
   # Defines start_year.
   # config.start_year = nil

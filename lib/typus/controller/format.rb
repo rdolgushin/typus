@@ -10,11 +10,13 @@ module Typus
       # and whatever other pagination system which comes.
       def get_paginated_data
         items_per_page = @resource.typus_options_for(:per_page)
+        items_sort_order = @resource.typus_options_for(:sort_order)
 
         @items = if defined?(Kaminari)
           @resource.page(params[:page]).per(items_per_page)
         elsif defined?(WillPaginate)
-          @resource.paginate(:page => params[:page], :per_page => items_per_page)
+          @resource.paginate(:page => params[:page], :per_page => items_per_page,
+                             :order => items_sort_order)
         else
           # TODO: Pagination at this point is disabled so we need to implement
           # our own pagination solution. At this point we are showing a message

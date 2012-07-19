@@ -30,6 +30,9 @@ module Typus
     mattr_accessor :per_page
     @@per_page = 25
 
+    mattr_accessor :sort_order
+    @@per_page = "created_at ASC"
+
     mattr_accessor :sortable
     @@sortable = true
 
